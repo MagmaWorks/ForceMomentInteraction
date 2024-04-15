@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -22,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Template\MagmaWorks.Template.csproj" />
-    <ProjectReference Include="..\ITemplate\MagmaWorks.ITemplate.csproj" />
-    <ProjectReference Include="..\Serialization\MagmaWorks.Template.Serialization.csproj" />
+    <ProjectReference Include="..\ForceMomentInteraction\MagmaWorks.ForceMomentInteraction.csproj" />
+    <ProjectReference Include="..\IForceMomentInteraction\MagmaWorks.IForceMomentInteraction.csproj" />
+    <ProjectReference Include="..\Serialization\MagmaWorks.ForceMomentInteraction.Serialization.csproj" />
   </ItemGroup>
 
 </Project>
