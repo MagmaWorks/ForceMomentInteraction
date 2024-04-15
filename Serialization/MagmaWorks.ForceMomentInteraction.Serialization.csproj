@@ -9,15 +9,15 @@
     <TargetFrameworks>net48;net6.0;net7.0;net8.0</TargetFrameworks>
     <LangVersion>8.0</LangVersion>
     <Platforms>AnyCPU</Platforms>
-    <RootNamespace>MagmaWorks.Template.Serialization</RootNamespace>
+    <RootNamespace>MagmaWorks.ForceMomentInteraction.Serialization</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Title>MagmaWorks Template Serialization</Title>
+    <Title>MagmaWorks ForceMomentInteraction Serialization</Title>
     <Company>Whitby Wood</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/MagmaWorks/Template-Repo/</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MagmaWorks/ForceMomentInteraction/Serialization</RepositoryUrl>
     <PackageIcon>MagmaWorks.png</PackageIcon>
   </PropertyGroup>
 
@@ -27,11 +27,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="OasysUnits.Serialization.JsonNet" Version="1.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ITemplate\MagmaWorks.ITemplate.csproj" />
-    <ProjectReference Include="..\Template\MagmaWorks.Template.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +50,11 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ForceMomentInteraction\MagmaWorks.ForceMomentInteraction.csproj" />
+    <ProjectReference Include="..\IForceMomentInteraction\MagmaWorks.IForceMomentInteraction.csproj" />
   </ItemGroup>
 
 </Project>

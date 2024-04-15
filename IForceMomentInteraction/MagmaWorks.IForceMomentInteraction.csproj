@@ -6,18 +6,18 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworks>net48;net6.0;net7.0;net8.0</TargetFrameworks>
+	<TargetFrameworks>net48;net6.0;net7.0;net8.0</TargetFrameworks>
 	  <LangVersion>8.0</LangVersion>
     <Platforms>AnyCPU</Platforms>
-    <RootNamespace>MagmaWorks.Template</RootNamespace>
+    <RootNamespace>MagmaWorks.ForceMomentInteraction</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Title>MagmaWorks Template</Title>
+    <Title>MagmaWorks ForceMomentInteraction Interfaces</Title>
     <Company>Whitby Wood</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/MagmaWorks/Template-Repo/</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MagmaWorks/ForceMomentInteraction/IForceMomentInteraction/</RepositoryUrl>
     <PackageIcon>MagmaWorks.png</PackageIcon>
   </PropertyGroup>
 
@@ -26,16 +26,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\ITemplate\MagmaWorks.ITemplate.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
-      <_Parameter1>TemplateTests</_Parameter1>
-    </AssemblyAttribute>
+    <PackageReference Include="OasysUnits" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>

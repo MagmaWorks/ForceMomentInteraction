@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace MagmaWorks.Template.Serialization
+namespace MagmaWorks.ForceMomentInteraction.Serialization
 {
-    public static class TemplateJsonSerializer
+    public static class ForceMomentInteractionJsonSerializer
     {
         public static JsonSerializerSettings Settings
         {
