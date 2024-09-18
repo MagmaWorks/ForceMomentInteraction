@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Numerics;
 using MagmaWorks.Geometry;
 using OasysUnits;
 
@@ -10,6 +9,7 @@ namespace MagmaWorks.ForceMomentInteraction
     {
         public IList<int[]> MeshIndices { get; set; }
         public IList<IForceMomentVertex> Verticies { get; set; }
+        public IList<IForceMomentTriFace> Faces { get; set; }
         public double Opacity { get; set; }
         public IBrush Brush { get; set; }
 
@@ -17,6 +17,14 @@ namespace MagmaWorks.ForceMomentInteraction
         {
             MeshIndices = new List<int[]>();
             Verticies = new List<IForceMomentVertex>();
+            Brush = new Brush(128, 128, 0);
+            Opacity = 1;
+        }
+
+        public ForceMomentMesh(IList<IForceMomentVertex> verticies, IList<IForceMomentTriFace> faces)
+        {
+            Verticies = verticies;
+            Faces = faces;
             Brush = new Brush(128, 128, 0);
             Opacity = 1;
         }
@@ -34,6 +42,7 @@ namespace MagmaWorks.ForceMomentInteraction
         public void SetIndices(IList<int[]> indices)
         {
             MeshIndices = new List<int[]>();
+            Faces = new List<IForceMomentTriFace>();
             foreach (int[] item in indices)
             {
                 if (item.Length != 3)
@@ -41,6 +50,7 @@ namespace MagmaWorks.ForceMomentInteraction
                     throw new ArgumentException($"There must three indices per mesh face but {item.Length} was provided");
                 }
 
+                Faces.Add(new ForceMomentTriFace(Verticies[item[0]], Verticies[item[1]], Verticies[item[2]]));
                 MeshIndices.Add(item);
             }
         }

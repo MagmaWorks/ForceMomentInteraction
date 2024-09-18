@@ -6,28 +6,43 @@
   </PropertyGroup>
 
   <PropertyGroup>
-	<TargetFrameworks>net48;net6.0;net7.0;net8.0</TargetFrameworks>
-	  <LangVersion>8.0</LangVersion>
+    <TargetFrameworks>net48;net6.0;net7.0;net8.0</TargetFrameworks>
+    <LangVersion>8.0</LangVersion>
     <Platforms>AnyCPU</Platforms>
     <RootNamespace>MagmaWorks.ForceMomentInteraction</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Title>MagmaWorks Force-Moment Interaction Interfaces</Title>
+    <Title>MagmaWorks Force-Moment Interaction Diagram</Title>
     <Company>Whitby Wood</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/MagmaWorks/ForceMomentInteraction/IForceMomentInteraction/</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MagmaWorks/ForceMomentInteraction/InteractionDiagram</RepositoryUrl>
     <PackageIcon>MagmaWorks.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MagmaWorks.ICartesianBase" Version="0.0.5" />
+    <PackageReference Include="MagmaWorks.Geometry" Version="0.0.5" />
+    <PackageReference Include="MagmaWorks.Taxonomy.Materials" Version="0.0.17" />
+    <PackageReference Include="MagmaWorks.Taxonomy.Profiles.Perimeter" Version="0.0.17" />
+    <PackageReference Include="MagmaWorks.Taxonomy.Sections" Version="0.0.17" />
+    <PackageReference Include="MIConvexHull" Version="1.1.19.1019" />
     <PackageReference Include="MinVer" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="OasysUnits" Version="1.1.1" />
+    <PackageReference Include="Triangle" Version="0.0.6-Beta3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IForceMomentInteraction\MagmaWorks.IForceMomentInteraction.csproj" />
+    <ProjectReference Include="..\ForceMomentInteraction\MagmaWorks.ForceMomentInteraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>ForceMomentInteractionTests</_Parameter1>
+    </AssemblyAttribute>
   </ItemGroup>
 
   <ItemGroup>

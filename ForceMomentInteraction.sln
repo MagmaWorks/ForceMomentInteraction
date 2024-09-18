@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagmaWorks.ForceMomentInter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForceMomentInteractionTests", "ForceMomentInteractionTests\ForceMomentInteractionTests.csproj", "{86D261B4-B15C-4F44-B655-CE127B7CC3C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractionDiagram", "InteractionDiagram\InteractionDiagram.csproj", "{42D57DB8-1BA2-4F6A-9B7D-B62FA14C61A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{86D261B4-B15C-4F44-B655-CE127B7CC3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86D261B4-B15C-4F44-B655-CE127B7CC3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D261B4-B15C-4F44-B655-CE127B7CC3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D57DB8-1BA2-4F6A-9B7D-B62FA14C61A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D57DB8-1BA2-4F6A-9B7D-B62FA14C61A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D57DB8-1BA2-4F6A-9B7D-B62FA14C61A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D57DB8-1BA2-4F6A-9B7D-B62FA14C61A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

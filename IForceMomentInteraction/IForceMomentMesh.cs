@@ -3,5 +3,5 @@ using OasysUnits;
 
 namespace MagmaWorks.ForceMomentInteraction
 {
-    public interface IForceMomentMesh : ICartesianMesh<IForceMomentVertex, ICoordinate, Force, Moment, Moment>, IForceMomentInteraction { }
+    public interface IForceMomentMesh : ICartesianMesh<IForceMomentVertex, IForceMomentTriFace, ICoordinate, Force, Moment, Moment>, IForceMomentInteraction { }
 }
