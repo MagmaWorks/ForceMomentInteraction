@@ -82,7 +82,7 @@ namespace MagmaWorks.ForceMomentInteraction
                         mzz += (face.Y - baryY) * fc * face.Area / 1E+06;
                     }
 
-                    for(int k = 0; k < rebarMeshes.Count; k++)
+                    for (int k = 0; k < rebarMeshes.Count; k++)
                     {
                         double fy = rebarMaterials[k].Strength.Megapascals;
                         foreach (AnalyticalFace face in rebarMeshes[k])
