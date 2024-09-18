@@ -38,7 +38,7 @@ namespace MagmaWorks.ForceMomentInteraction
                 rebarMeshes.Add(
                     Meshing.Create(barPerimeter, settings.RebarMaximumFaceArea, settings.RebarMinimumAngle));
                 rebarVoidOutlines.Add(new Contour(
-                    barPerimeter.Select(p => new TriangleNet.Geometry.Vertex(p.V.As(unit), p.U.As(unit)))));
+                    barPerimeter.Select(p => new TriangleNet.Geometry.Vertex(p.Y.As(unit), p.Z.As(unit)))));
             }
 
             List<AnalyticalFace> concreteMesh = Meshing.Create(
