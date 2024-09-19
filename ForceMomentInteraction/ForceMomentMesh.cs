@@ -7,19 +7,13 @@ namespace MagmaWorks.ForceMomentInteraction
 {
     public class ForceMomentMesh : IForceMomentMesh
     {
-        public IList<int[]> MeshIndices { get; set; }
-        public IList<IForceMomentVertex> Verticies { get; set; }
-        public IList<IForceMomentTriFace> Faces { get; set; }
-        public double Opacity { get; set; }
-        public IBrush Brush { get; set; }
+        public IList<int[]> MeshIndices { get; set; } = new List<int[]>();
+        public IList<IForceMomentVertex> Verticies { get; set; } = new List<IForceMomentVertex>();
+        public IList<IForceMomentTriFace> Faces { get; set; } = new List<IForceMomentTriFace>();
+        public double Opacity { get; set; } = 1;
+        public IBrush Brush { get; set; } = new Brush(128, 128, 0);
 
-        public ForceMomentMesh()
-        {
-            MeshIndices = new List<int[]>();
-            Verticies = new List<IForceMomentVertex>();
-            Brush = new Brush(128, 128, 0);
-            Opacity = 1;
-        }
+        public ForceMomentMesh() { }
 
         public ForceMomentMesh(IList<IForceMomentVertex> verticies, IList<IForceMomentTriFace> faces)
         {
