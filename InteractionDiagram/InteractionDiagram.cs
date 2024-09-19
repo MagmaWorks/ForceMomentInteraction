@@ -32,7 +32,7 @@ namespace MagmaWorks.ForceMomentInteraction
         {
             Initialise(section, settings);
             var vertices = new List<IForceMomentVertex>();
-            Parallel.For(0, settings.Steps, (i) => 
+            Parallel.For(0, settings.Steps, (i) =>
             {
                 double alpha = i * 2 * Math.PI / (settings.Steps - 1);
 
@@ -107,7 +107,7 @@ namespace MagmaWorks.ForceMomentInteraction
             ILocalPoint2d centroid = ((LocalPolygon2d)perimeter.OuterEdge).GetBarycenter();
             return (centroid.Y.As(unit), centroid.Z.As(unit));
         }
-        
+
         private void Initialise(IConcreteSection section, DiagramSettings settings)
         {
             var rebarVoidOutlines = new List<Contour>();
