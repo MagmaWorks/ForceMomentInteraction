@@ -23,9 +23,9 @@
 
   <ItemGroup>
     <PackageReference Include="MagmaWorks.Geometry" Version="0.0.5" />
-    <PackageReference Include="MagmaWorks.Taxonomy.Materials" Version="0.0.18" />
-    <PackageReference Include="MagmaWorks.Taxonomy.Profiles.Perimeter" Version="0.0.18" />
-    <PackageReference Include="MagmaWorks.Taxonomy.Sections" Version="0.0.18" />
+    <PackageReference Include="MagmaWorks.Taxonomy.Materials" Version="0.0.19" />
+    <PackageReference Include="MagmaWorks.Taxonomy.Profiles.Perimeter" Version="0.0.19" />
+    <PackageReference Include="MagmaWorks.Taxonomy.Sections" Version="0.0.19" />
     <PackageReference Include="MIConvexHull" Version="1.1.19.1019" />
     <PackageReference Include="MinVer" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
