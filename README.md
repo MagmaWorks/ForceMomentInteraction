@@ -4,6 +4,7 @@ Project to handle Axial Force and Biaxial Moment Interaction (also known as NM, 
 This project also includes creation of 3D diagrams.
 
 ![GitHub Actions Workflow Status](https://github.com/MagmaWorks/ForceMomentInteraction/actions/workflows/on-merge-to-main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/MagmaWorks/ForceMomentInteraction/graph/badge.svg)](https://codecov.io/gh/MagmaWorks/ForceMomentInteraction)
 
 ## Latest release
 [![Releasestatus](https://github.com/MagmaWorks/ForceMomentInteraction/actions/workflows/on-release.yml/badge.svg)](https://github.com/MagmaWorks/ForceMomentInteraction/releases)
