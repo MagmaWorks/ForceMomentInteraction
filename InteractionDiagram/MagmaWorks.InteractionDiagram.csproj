@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <MinVerMinimumMajorMinor>0.0</MinVerMinimumMajorMinor>
@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="MagmaWorks.Geometry" Version="0.0.11" />
-    <PackageReference Include="MagmaWorks.Taxonomy.Materials" Version="0.0.21" />
+    <PackageReference Include="MagmaWorks.Taxonomy.Materials" Version="0.0.26" />
     <PackageReference Include="MagmaWorks.Taxonomy.Profiles.Perimeter" Version="0.0.26" />
     <PackageReference Include="MagmaWorks.Taxonomy.Sections" Version="0.0.26" />
     <PackageReference Include="MIConvexHull" Version="1.1.19.1019" />
