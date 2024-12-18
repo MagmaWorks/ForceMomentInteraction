@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MagmaWorks.ForceMomentInteraction.Utility;
 using MagmaWorks.Geometry;
 using MagmaWorks.Taxonomy.Materials;
+using MagmaWorks.Taxonomy.Materials.StandardMaterials.En;
 using MagmaWorks.Taxonomy.Profiles;
 using MagmaWorks.Taxonomy.Sections;
 using OasysUnits;
@@ -104,7 +105,7 @@ namespace MagmaWorks.ForceMomentInteraction
 
         private (double y, double z) GetCentroid(IPerimeter perimeter, LengthUnit unit)
         {
-            ILocalPoint2d centroid = ((LocalPolygon2d)perimeter.OuterEdge).GetBarycenter();
+            ILocalPoint2d centroid = ((LocalPolyline2d)perimeter.OuterEdge).GetBarycenter();
             return (centroid.Y.As(unit), centroid.Z.As(unit));
         }
 
@@ -116,9 +117,9 @@ namespace MagmaWorks.ForceMomentInteraction
             _concreteMesh = MeshConcrete(perimeter, settings, rebarVoidOutlines);
             (_yLength, _zLength) = GetBounds(perimeter, _unit);
             (_baryY, _baryZ) = GetCentroid(perimeter, _unit);
-            _concreteMaterial = AnalysisMaterialFactory.CreateLinearElastic(section.Material);
+            _concreteMaterial = AnalysisMaterialFactory.CreateLinearElastic((IEnConcreteMaterial)section.Material);
             _rebarMaterials =
-                section.Rebars.Select(r => AnalysisMaterialFactory.CreateLinearElastic(r.Rebar.Material)).ToList();
+                section.Rebars.Select(r => AnalysisMaterialFactory.CreateLinearElastic((IEnRebarMaterial)r.Rebar.Material)).ToList();
         }
 
         private List<AnalyticalFace> MeshConcrete(IPerimeter perimeter, DiagramSettings settings, List<Contour> voids)
