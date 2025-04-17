@@ -1,8 +1,4 @@
-﻿using MagmaWorks.Geometry;
-using OasysUnits;
-using OasysUnits.Units;
-
-namespace MagmaWorks.ForceMomentInteraction
+﻿namespace MagmaWorks.ForceMomentInteraction
 {
     public class ForceMomentVertex : IForceMomentVertex
     {

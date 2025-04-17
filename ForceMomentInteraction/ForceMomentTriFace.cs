@@ -1,8 +1,4 @@
-﻿using System;
-using OasysUnits;
-using OasysUnits.Units;
-
-namespace MagmaWorks.ForceMomentInteraction
+﻿namespace MagmaWorks.ForceMomentInteraction
 {
     public class ForceMomentTriFace : IForceMomentTriFace
     {

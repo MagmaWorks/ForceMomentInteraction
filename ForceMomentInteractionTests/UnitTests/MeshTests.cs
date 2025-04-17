@@ -2,8 +2,8 @@ using ForceMomentInteractionTests.Utility;
 using MagmaWorks.ForceMomentInteraction;
 using MagmaWorks.ForceMomentInteraction.Serialization.Extensions;
 using MagmaWorks.Geometry;
-using OasysUnits;
-using OasysUnits.Units;
+using UnitsNet;
+using UnitsNet.Units;
 
 namespace ForceMomentInteractionTests.UnitTests
 {

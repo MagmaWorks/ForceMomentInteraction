@@ -4,7 +4,6 @@ using System.Runtime.CompilerServices;
 using MagmaWorks.ForceMomentInteraction;
 using MagmaWorks.ForceMomentInteraction.Serialization.Extensions;
 using MagmaWorks.Geometry;
-using OasysUnits;
 
 namespace ForceMomentInteractionTests.UnitTests
 {
@@ -22,8 +21,8 @@ namespace ForceMomentInteractionTests.UnitTests
         private static double _double { get { return 9.8; } }
         private static bool _bool { get { return true; } }
         private static byte _byte { get { return 3; } }
-        private static Force _force { get { return new Force(2.5, OasysUnits.Units.ForceUnit.Kilonewton); } }
-        private static Moment _moment { get { return new Moment(33, OasysUnits.Units.MomentUnit.KilonewtonMeter); } }
+        private static Force _force { get { return new Force(2.5, ForceUnit.Kilonewton); } }
+        private static Moment _moment { get { return new Moment(33, MomentUnit.KilonewtonMeter); } }
 
         [Theory]
         [ClassData(typeof(TestDataGenerator))]

@@ -1,5 +1,4 @@
 ﻿using MIConvexHull;
-using OasysUnits.Units;
 
 namespace MagmaWorks.ForceMomentInteraction.Utility
 {

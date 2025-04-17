@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using MagmaWorks.ForceMomentInteraction.Utility;
 using MagmaWorks.Geometry;
 using MagmaWorks.Taxonomy.Materials;
 using MagmaWorks.Taxonomy.Materials.StandardMaterials.En;
 using MagmaWorks.Taxonomy.Profiles;
 using MagmaWorks.Taxonomy.Sections;
-using OasysUnits;
-using OasysUnits.Units;
 using TriangleNet.Geometry;
 
 namespace MagmaWorks.ForceMomentInteraction
