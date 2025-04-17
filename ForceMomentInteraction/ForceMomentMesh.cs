@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using MagmaWorks.Geometry;
-using OasysUnits;
-
-namespace MagmaWorks.ForceMomentInteraction
+﻿namespace MagmaWorks.ForceMomentInteraction
 {
     public class ForceMomentMesh : IForceMomentMesh
     {

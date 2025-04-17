@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿
 using TriangleNet.Topology;
 
 namespace MagmaWorks.ForceMomentInteraction.Utility

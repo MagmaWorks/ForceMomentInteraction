@@ -1,6 +1,4 @@
-﻿using OasysUnits;
-
-namespace MagmaWorks.ForceMomentInteraction
+﻿namespace MagmaWorks.ForceMomentInteraction
 {
     public class DiagramSettings
     {

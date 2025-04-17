@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using MagmaWorks.Geometry;
+﻿using MagmaWorks.Geometry;
 using MIConvexHull;
-using OasysUnits;
-using OasysUnits.Units;
 using TriangleNet.Geometry;
 using TriangleNet.Meshing;
 using TMesh = TriangleNet.Mesh;

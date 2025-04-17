@@ -11,7 +11,7 @@ namespace MagmaWorks.ForceMomentInteraction.Serialization
                 var settings = new JsonSerializerSettings
                 {
                     Converters = {
-                        new OasysUnits.Serialization.JsonNet.OasysUnitsIQuantityJsonConverter(),
+                        new UnitsNet.Serialization.JsonNet.UnitsNetIQuantityJsonConverter(),
                     },
                     TypeNameHandling = TypeNameHandling.Objects,
                     TypeNameAssemblyFormatHandling = TypeNameAssemblyFormatHandling.Simple
